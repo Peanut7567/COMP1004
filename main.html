@@ -4,8 +4,8 @@
 
 <!-- Creates buttons for logging in or signing up -->
 <body>
-    <button type = "button"> Sign Up </button>
-    <button type = "button"> Login </button>
+    <button onclick = "signUp()"> Sign Up </button>
+    <button onclick = "logIn()"> Login </button>
 </body>
 
 <!-- Creates form for user to sign in -->
@@ -18,7 +18,7 @@
             <input type = "text" id = "loginpassword">
         <br>
         <br>
-        <button type = "submit"> Submit </button>
+        <button onclick = "Submit()"> Submit </button>
     </form>
 </body>
 
@@ -27,12 +27,12 @@
 <body style = "background-color: cyan;"> <!-- Changes the Background Colour of the Page -->
 
     <nav>
-    <button> <a href = "#" id = "passwordChecker"> PASSWORD CHECKER </a> </button>
+    <button onclick = "passwordChecker()">  PASSWORD CHECKER </button>
     </nav>
     
     <br>
     <br>
-    <button> PASSWORD MANAGER </button>
+    <button onclick = "passwordManager()"> PASSWORD MANAGER  </button>
     <br>
     <br>
     <br>
