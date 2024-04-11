@@ -1,0 +1,37 @@
+{
+    "users": [
+        {
+            "emailAddress": "user1@gmail.com",
+            "password": "abcdefg",
+            "websiteInfo": {
+                "websiteName": ["Google", "Amazon"],
+                "websiteUsername": ["Google User", "Amazon User"],
+                "websitePassword": ["Google Password", "Amazon Password"]
+
+            }
+        },
+
+        {
+            "emailAddress": "user2@gmail.com",
+            "password": "123456789",
+            "websiteInfo": {
+                "websiteName": ["Google"],
+                "websiteUsername": ["Google User"],
+                "websitePassword": ["Google Password"]
+
+            }
+        },
+        
+        {
+            "emailAddress": "user3@gmail.com",
+            "password": "abcd1234",
+            "websiteInfo": {
+                "websiteName": ["Google"],
+                "websiteUsername": ["Google User"],
+                "websitePassword": ["Google Password"]
+
+            }
+        }
+
+    ]
+}

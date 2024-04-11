@@ -1,101 +1,86 @@
 <!DOCTYPE html>
 <html>
 <script src = "code.js" defer> </script>
+<link rel = "stylesheet" href = "code.css">
 
-<br>
-<br>
 
-<!-- Creates form for user to sign in -->
 <body>
-    <form style = "text-align: center;" action = "database.txt">  
+    <form id = "loginForm">  
         <label for = "login"> Login:  </label>
-            <input type = "email" id = "login" placeholder = "n@n.com" minlength = "3" maxlength = "20" required>
+            <input type = "email" id = "login" placeholder = "n@n.com" required>
         <br>
-        <label for = "password"> Password: </label>
-            <input type = "password" id = "password" placeholder = "abc123" minlength = "3" maxlength = "15" required>
+        <label for = "passwordLI"> Password: </label>
+            <input type = "password" id = "passwordLI" placeholder = "abc123" required>
         <br>
         <br>
         <button onclick = "logIn()"> Login </button>
-        <button onclick = "signUp()"> Sign Up </button>
     </form>
-</body>
 
+    <p id = "loginError"> PLEASE TRY AGAIN OR CREATE AN ACCOUNT </p>  
+    <button id = "signUpButton" onclick = "signUp()"> Sign Up </button>
 
-<br>
-<br>
+    <br>
+    <br>
 
-
-<!-- Creates form to allow user to create an account by accepting details and writing to a database -->
-<body>
-    <form action = "database.txt">
+    <form id = "signUpForm">
         <label for = "emailAddress"> Email Address: </label>
-            <input type = "email">
+            <input id = "emailAddress" type = "email" placeholder = "n@n.com" required>
         
         <br>
 
-        <label> Phone Number: </label>
-            <input type = "tel">
+        <label for = "passwordSignUp"> Password: </label>
+            <input id = "passwordSignUp" type = "password" placeholder = "abc123" minlength = "8" maxlength = "20" required>
 
         <br>
 
-        <label for = "dob"> Date of Birth: </label>
-            <input type="date">
+        <button onclick = "signUpInfo()"> Submit </button>
 
         <br>
-
-        <label for = "password"> Password: </label>
-            <input type="password">
-
         <br>
-
 
     </form>
+
+
+    <form id = "mainPage">
+        <label for = "websiteName"> Website Name: </label>
+            <input id = "websiteName" type = "text" placeholder = "Website">
+        
+        <br>
+        
+        <label for = "websiteUsername"> Username: </label>
+            <input id = "websiteUsername" type = "text" placeholder = "User1">
+        
+        <br>
+
+        <label for = "websitePassword"> Password: </label>
+            <input id = "websitePassword" type = "text" placeholder = "abc123">
+
+        <br>
+
+        <button onclick = "submitWebsiteInfo()"> Submit </button>
+        
+        <br>
+        <br>
+
+    </form>
+
 </body>
 
 
-<br>
-<br>
-
-
-<!-- Creates the Main Content of the Page -->
-<body style = "background-color: cyan;"> <!-- Changes the Background Colour of the Page -->
-
-    <nav>
-    <button onclick = "passwordChecker()">  PASSWORD CHECKER </button>
-    </nav>
-    
-    <br>
-    <br>
-    <button onclick = "passwordManager()"> PASSWORD MANAGER  </button>
-    <br>
-    <br>
-    <br>
-
-</body> 
-
-
-
-<!-- Creates a Table -->
-<table>
-    <tr>
+<table id = "websiteTable">
+    <tr id = "Header">
         <th> Website Name </th>
         <th> Username </th>
         <th> Password </th>
     </tr>
-    <tr>
-        <td id="test"> A </td>
-        <td> A </td>
-        <td> A </td>
+    <tr id = Name>
+ 
     </tr>
-    <tr>
-        <td> B </td>
-        <td> B </td>
-        <td> B </td>
+    <tr id = Username>
+
     </tr>
-    <tr>
-        <td> C </td>
-        <td> C </td>
-        <td> C </td>
+    <tr id = Password>
+
     </tr>
 </table>
 

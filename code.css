@@ -1,0 +1,33 @@
+#loginForm {
+
+    display: block;
+
+}
+
+
+#loginError {
+
+    display: none;
+
+}
+
+
+#signUpForm {
+
+    display: none;
+
+}
+
+
+#mainPage {
+
+    display: none;
+
+}
+
+
+#websiteTable {
+
+    display: none;
+
+}
