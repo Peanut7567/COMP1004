@@ -1,6 +1,6 @@
 #loginForm {
 
-    display: block;
+    display: none;
 
 }
 
@@ -19,7 +19,7 @@
 }
 
 
-#mainPage {
+#submitEntryForm {
 
     display: none;
 
@@ -27,6 +27,90 @@
 
 
 #websiteTable {
+
+    display: none;
+
+}
+
+
+#changeDetails {
+
+    display: none;
+
+}
+
+
+#changeDetailsForm {
+
+    display: none;
+
+}
+
+
+#deleteWebsiteForm {
+
+    display: none;
+
+}
+
+
+#changeDetailsError {
+
+    display: none;
+
+}
+
+
+#deleteError {
+
+    display: none;
+
+}
+
+
+#exportData {
+
+    display: none;
+
+}
+
+
+#deleteEntry {
+
+    display: none;
+
+}
+
+
+#signUpError {
+
+    display: none;
+
+}
+
+
+#submitEntry {
+
+    display: none;
+
+}
+
+
+#signUpBlankError {
+
+    display: none;
+
+}
+
+
+#passwordRequirements {
+
+    display: none;
+
+}
+
+
+#passwordError {
 
     display: none;
 

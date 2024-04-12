@@ -1,7 +1,7 @@
 {
     "users": [
         {
-            "emailAddress": "user1@gmail.com",
+            "username": "user1",
             "password": "abcdefg",
             "websiteInfo": {
                 "websiteName": ["Google", "Amazon"],
@@ -12,7 +12,7 @@
         },
 
         {
-            "emailAddress": "user2@gmail.com",
+            "username": "user2",
             "password": "123456789",
             "websiteInfo": {
                 "websiteName": ["Google"],
@@ -23,7 +23,7 @@
         },
         
         {
-            "emailAddress": "user3@gmail.com",
+            "username": "user3",
             "password": "abcd1234",
             "websiteInfo": {
                 "websiteName": ["Google"],

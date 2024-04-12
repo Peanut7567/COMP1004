@@ -5,9 +5,12 @@
 
 
 <body>
+    <button id = initialLogin onclick = "initialLogin()"> Login </button>
+
+
     <form id = "loginForm">  
-        <label for = "login"> Login:  </label>
-            <input type = "email" id = "login" placeholder = "n@n.com" required>
+        <label for = "login"> Username:  </label>
+            <input type = "text" id = "login" placeholder = "User" required>
         <br>
         <label for = "passwordLI"> Password: </label>
             <input type = "password" id = "passwordLI" placeholder = "abc123" required>
@@ -23,8 +26,8 @@
     <br>
 
     <form id = "signUpForm">
-        <label for = "emailAddress"> Email Address: </label>
-            <input id = "emailAddress" type = "email" placeholder = "n@n.com" required>
+        <label for = "username"> Username: </label>
+            <input id = "username" type = "text" placeholder = "User" required>
         
         <br>
 
@@ -40,20 +43,25 @@
 
     </form>
 
+    <button id = "changeDetails" onclick = "changeDetailsForm()"> Change Details </button>
+    <button id = "deleteEntry" onclick = "deleteWebsiteForm()"> Delete Entry </button>
+    <button id = "submitEntry" onclick = "submitEntry()"> Submit Entry </button>
 
-    <form id = "mainPage">
+    <form id = "submitEntryForm">
+        <h1> Add an Entry </h1>
+
         <label for = "websiteName"> Website Name: </label>
-            <input id = "websiteName" type = "text" placeholder = "Website">
+            <input id = "websiteName" type = "text" placeholder = "Website" required>
         
         <br>
         
         <label for = "websiteUsername"> Username: </label>
-            <input id = "websiteUsername" type = "text" placeholder = "User1">
+            <input id = "websiteUsername" type = "text" placeholder = "User1" required>
         
         <br>
 
         <label for = "websitePassword"> Password: </label>
-            <input id = "websitePassword" type = "text" placeholder = "abc123">
+            <input id = "websitePassword" type = "text" placeholder = "abc123" required>
 
         <br>
 
@@ -64,26 +72,80 @@
 
     </form>
 
+    <p id = "signUpBlankError"> Please try again </p>
+    <p id = "signUpError"> Email in use. Please try again </p>
+
+    <br>
+
+    <form id = changeDetailsForm>
+        <h1> Change an Entry </h1>
+
+        <label for = "websiteNameChange"> Website Name: </label>
+            <input id = "websiteNameChange" type = "text" placeholder = "Website">
+
+        <br>
+        
+        <label for = "websiteUsernameChange"> Username: </label>
+            <input id = "websiteUsernameChange" type = "text" placeholder = "User2">
+
+        <br>
+
+        <label for = "websitePasswordChange"> Password: </label>
+            <input id = "websitePasswordChange" type = "text" placeholder = "xyz789">
+
+        <br>
+
+        <button onclick = "changeDetails()"> Submit </button>
+
+        <br>
+        <br>
+
+    </form>
+
+    <form id = "deleteWebsiteForm">
+        <h1> Delete an Entry </h1>
+
+        <label for = "websiteDelete"> Which website would you like to remove? </label>
+        <br>
+            <input id = "websiteDelete" type = "text" placeholder = "Website Name">
+        
+        <br>
+
+        <button id = "deleteAccountButton" onclick = "deleteAccount()"> Submit </button>
+
+        <br>
+        <br>
+
+
+    </form>
+
+    <p id = changeDetailsError> Website not found. Please add details or try again </p>
+
+    <p id = deleteError> Website details not found. Please try again </p>
+
+    <table id = "websiteTable">
+        <tr id = "Header">
+            <th> Website Name </th>
+            <th> Username </th>
+            <th> Password </th>
+        </tr>
+        <tr id = Name>
+     
+        </tr>
+        <tr id = Username>
+    
+        </tr>
+        <tr id = Password>
+    
+        </tr>
+    </table>
+
+    <button id = "exportData" onclick = "exportData()"> Export </button>
+
+    <p id = "passwordRequirements"> The password must include: at least 8 characters, one uppercase letter, one lowercase letter, one number and one special character. </p>
+
+    <p id = "passwordError"> Password does not meet requirements </p>
+
 </body>
-
-
-<table id = "websiteTable">
-    <tr id = "Header">
-        <th> Website Name </th>
-        <th> Username </th>
-        <th> Password </th>
-    </tr>
-    <tr id = Name>
- 
-    </tr>
-    <tr id = Username>
-
-    </tr>
-    <tr id = Password>
-
-    </tr>
-</table>
-
-
 
 </html>
