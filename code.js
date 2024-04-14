@@ -139,6 +139,9 @@ function logIn() {
         var loginEmailClear = document.getElementById("login");
         var loginPasswordClear = document.getElementById("passwordLI");
 
+        var signUpButton = document.getElementById("signUpButton");
+        signUpButton.style.display = "block";
+
         loginEmailClear.value = "";
         loginPasswordClear.value = "";
 
@@ -241,12 +244,17 @@ function signUpInfo() {
 
             var passwordErrorHidden = document.getElementById("passwordError");
             passwordErrorHidden.style.display = "none"
+
+            var passwordRequirementsHidden = document.getElementById("passwordRequirements");
+            passwordRequirementsHidden.style.display = "none";
             
             signUpEmail.value = "";
             signUpPassword.value = "";
         }
 
         else {
+
+            event.preventDefault();
 
             var passwordError = document.getElementById("passwordError");
             passwordError.style.display = "block"
@@ -331,7 +339,7 @@ async function displayData() {
 
     for (var i = 0; i < user.websiteInfo.websiteName.length; i++) {
 
-        const websiteName = document.createElement("td");
+        const websiteName = document.createElement("tr");
         websiteName.textContent = user.websiteInfo.websiteName[i];
         Name.appendChild(websiteName);
 
@@ -339,7 +347,7 @@ async function displayData() {
 
     for (var i = 0; i < user.websiteInfo.websiteUsername.length; i++) {
 
-        const websiteName = document.createElement("td");
+        const websiteName = document.createElement("tr");
         websiteName.textContent = user.websiteInfo.websiteUsername[i];
         Username.appendChild(websiteName);
 
@@ -347,7 +355,7 @@ async function displayData() {
 
     for (var i = 0; i < user.websiteInfo.websitePassword.length; i++) {
 
-        const websiteName = document.createElement("td");
+        const websiteName = document.createElement("tr");
         websiteName.textContent = user.websiteInfo.websitePassword[i];
         Password.appendChild(websiteName);
 
