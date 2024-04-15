@@ -505,6 +505,12 @@ function submitEntry() {
 
     var changeDetailsForm = document.getElementById("changeDetailsForm");
     changeDetailsForm.style.display = "none";
+
+    var changeErrorHidden = document.getElementById("changeDetailsError");
+    changeErrorHidden.style.display = "none";
+
+    var deleteErrorHidden = document.getElementById("deleteError");
+    deleteErrorHidden.style.display = "none";
 }
 
 
@@ -528,6 +534,12 @@ function changeDetailsForm() {
     var submitEntry = document.getElementById("submitEntryForm");
     submitEntry.style.display = "none";
 
+    var changeErrorHidden = document.getElementById("changeDetailsError");
+    changeErrorHidden.style.display = "none";
+
+    var deleteErrorHidden = document.getElementById("deleteError");
+    deleteErrorHidden.style.display = "none";
+
 }
 
 
@@ -550,6 +562,12 @@ function deleteWebsiteForm() {
 
     var submitEntry = document.getElementById("submitEntryForm");
     submitEntry.style.display = "none";
+    
+    var changeErrorHidden = document.getElementById("changeDetailsError");
+    changeErrorHidden.style.display = "none";
+
+    var deleteErrorHidden = document.getElementById("deleteError");
+    deleteErrorHidden.style.display = "none";
 
 }
 
