@@ -1,0 +1,1 @@
+This project is a password manager, which will allow users to store usernames and passwords for external websites under one secure account. They are able to create a new account which they can use to store their details under, and will also have the ability to delete entries from unused websites, and change entries if they change their details on that website.
